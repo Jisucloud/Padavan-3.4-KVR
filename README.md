@@ -25,5 +25,5 @@ https://github.com/immortalwrt/padavan
   
 固件默认wifi名称PDCN及PDCN_5G  
 wifi密码1234567890  
-管理地址192.168.123.1  
+管理地址192.168.2.1  
 管理账号密码都是admin  
