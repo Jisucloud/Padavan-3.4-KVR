@@ -1622,7 +1622,7 @@ setTimeout('document.getElementById("btn_ctime").style.display="none";',1000);
 														<th width="50%">谷歌访问</th>
 														<td id="gg_status"></td>
 													</tr>
-														<th width="50%">客户端<#running_status#>
+														<th>客户端<#running_status#>
 														</th>
 														<td id="ss_status"></td>
 													</tr>
