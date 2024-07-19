@@ -1,5 +1,5 @@
 XRAY_VERSION := 1.8.19
-XRAY_URL := https://github.com/XTLS/Xray-core/tar.gz/v$(XRAY_VERSION)
+XRAY_URL := https://codeload.github.com/XTLS/Xray-core/tar.gz/v$(XRAY_VERSION)
 XRAY_DIR = xray-core/Xray-core-$(XRAY_VERSION)/main
 
 THISDIR = $(shell pwd)
