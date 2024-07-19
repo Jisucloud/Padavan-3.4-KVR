@@ -1,4 +1,4 @@
-XRAY_VERSION := 1.7.5
+XRAY_VERSION := 1.8.16
 XRAY_URL := https://codeload.github.com/XTLS/Xray-core/tar.gz/v$(XRAY_VERSION)
 XRAY_DIR = xray-core/Xray-core-$(XRAY_VERSION)/main
 
@@ -20,7 +20,8 @@ build_extract:
 	fi )
 
 build:
-	( cd $(THISDIR)/$(XRAY_DIR); \
+	( sed -i "s/go 1.22/go 1.22.4/g" $(THISDIR)/xray-core/Xray-core-$(XRAY_VERSION)/go.mod; \
+	cd $(THISDIR)/$(XRAY_DIR); \
 	GOOS=linux GOARCH=mipsle go build -gcflags=all="-l" -ldflags "-w -s -buildid=" -trimpath -o $(THISDIR)/bin/xray; \
 	)
 
